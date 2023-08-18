@@ -53,3 +53,18 @@ console.log(arr5);
 
 arr5.reverse();
 console.log(arr5);
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+console.log(nums);
+// splice 
+const returnedArray= nums.splice(2, 3, "Akshita");
+console.log(nums);
+console.log(returnedArray);
+
+const ele = nums.slice(2, 3);
+console.log(typeof(ele), ele);
+
+nums.splice(2, 1);
+
+console.log(nums);
