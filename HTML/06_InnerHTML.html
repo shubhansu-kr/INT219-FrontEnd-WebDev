@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHtml</title>
+    <script>
+        let greetVal = false;
+        const greet = ()=>{
+            let pId = document.getElementById("greet");
+            if (greetVal) {
+                pId.innerText = "Click the Submit button";
+                greetVal = false;
+            }
+            else {
+                pId.innerText = "LPU expects a good placement from you.";
+                greetVal = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Welcome to LPU</p>
+    <p id="greet">Hehe</p>
+    <input type="submit" onclick="greet()">
+</body>
+</html>
