@@ -22,9 +22,9 @@ const incrementor = () => {
 }
 
 const decrementor = () => {
-    if (count == 0) {
+    if (count <= 0) {
         window.alert("Cannot decrement less than 0");
-        return;
+        count = 1;
     }
     --count;
     load();
@@ -44,11 +44,17 @@ const reset = () => {
 
 const setCounter = () => {
     let input = prompt("Enter the value of Counter", "Enter count number");
+    
+    if (input == "" || input == null) {
+        load();
+        return;
+    }
+    
     if (input >= 0 && input < 2100) {
         count = input;
-        load();
     }
     else {
         window.alert("Enter a valid counter [0-2100]");
     }
+    load();
 }
