@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Form</title>
+
+    <style>
+        div{
+            font-size: small;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        Name : <input type="text" id="nameField" value="" placeholder="Your Name here"><br>
+        <div id="nameWarn"></div>
+
+        Mobile : <input type="number" id="mobileField" value=""><br>
+        <div id="mobileWarn"></div>
+
+        Email : <input type="email" id="emaiLField" value=""><br>
+        <div id="emailWarn"></div>
+
+        Password : <input type="password" id="passwordField" value=""><br>
+        <div id="passwordWarn"></div>
+
+        ConfirmPassword : <input type="password" id="confirmPasswordField" value=""><br>
+        <div id="confirmPasswordWarn"></div>
+
+    </form>
+    <button onclick="validateForm()">Submit</button>
+    <script src="./../JavaScript/11_ValidateForm.js"></script>
+</body>
+</html>
